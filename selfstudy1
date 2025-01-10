@@ -1,0 +1,74 @@
+package com.demo;
+
+public class First 
+{
+	public static void main(String[] args) 
+	{
+		int sub1 = 90;              //initializing
+		int sub2 = 87;
+		int sub3 = 97;
+		int sub4 = 77;
+		int sub5 = 83;
+		
+		int total = (sub1+sub2+sub3+sub4+sub5);
+		
+		System.out.println("Total : "+ total);
+		
+		float p = (float)total;               //type casting
+		float percentage = (float) ((p/500.0)*100.0);
+		
+		System.out.println("Percentage: " + percentage + "%");
+		
+	}
+
+}
+
+//Output
+Total : 434
+Percentage: 86.8%
+
+
+
+
+package com.demo;
+
+public class Area 
+{
+	public static void main(String[] args) {
+		// Area of Reactangle
+		int breadth = 12;
+		int length = 20;
+		
+		int areaofrect = (length*breadth);
+		System.out.println("Area of Reactangle :" + areaofrect);
+		
+		// Area of Triangle
+		int base = 4;
+		int height = 6;
+		
+		float areaoftriangle = (float) (0.5* base* height);
+		System.out.println("Area of Triangle : " + areaoftriangle);
+		
+		//Area of Square 
+		int side = 10 ;
+		
+	    int areaofsquare = side * side ;
+	    System.out.println("Area of Square : " + areaofsquare);	
+	    
+	    //Area of circle 
+	   double pi = 3.14 ;
+	   double radius = 8 ;
+	    
+	   double areaofcircle = pi * radius *radius ;
+	   System.out.println("Area of circle : " + areaofcircle);	
+	    
+	}
+
+}
+
+//Output
+Area of Reactangle :240
+Area of Triangle : 12.0
+Area of Square : 100
+Area of circle : 200.96
+
