@@ -1,0 +1,114 @@
+LAB 3 : 
+
+1. Write a program to demonstrate all primitive datatypes in Java.
+
+package com.demo;
+
+public class PrimitiveDatatypes {
+
+	public static void main(String[] args) 
+	{
+		    byte age = 20; 
+	        System.out.println("Student Age: " + age);
+
+	       
+	        short Roll_No = 12345; 
+	        System.out.println("Student Roll_No: " + Roll_No);
+
+	        
+	        int Marks = 450; 
+	        System.out.println(" Marks: " + Marks);
+
+	        
+	        long PRN = 22345673210L; 
+	        System.out.println("PRN Number: " + PRN);
+
+	        
+	        float PI = 3.14f; 
+	        System.out.println("pi value: " + PI);
+
+	        
+	        double percentage = (450 / 500.0) * 100; 
+	        System.out.println("Percentage: " + percentage + "%");
+
+	        
+	        char grade = 'A'; 
+	        System.out.println("Grade: " + grade);
+
+	        
+	        boolean result = true; 
+	        System.out.println("Is Student Pass: " + result);
+	}
+
+}
+
+
+
+
+2. Write a program to input student marks of multiple subject..print total of marks , result depending on percentage
+
+
+package com.demo;
+
+import java.util.Scanner;
+
+public class Student {
+
+	public static void main(String[] args) {
+		
+		 Scanner sc = new Scanner(System.in);
+
+	        System.out.println("Enter the marks of subjects ");
+	        
+	        System.out.println("Enter marks for subject 1: ");
+	        int sub1 = sc.nextInt();
+	        
+	        System.out.println("Enter marks for subject 2: ");
+	        int sub2 = sc.nextInt();
+
+	        System.out.println("Enter marks for subject 3: ");
+	        int sub3 = sc.nextInt();
+
+	        System.out.println("Enter marks for subject 4: ");
+	        int sub4 = sc.nextInt();
+
+	        System.out.println("Enter marks for subject 5: ");
+	        int sub5 = sc.nextInt();
+
+
+	        int totalmarks = (sub1+sub2+sub3+sub4+sub5);
+	        
+	        System.out.println("Total Marks of Student is : "+ totalmarks);
+			
+			float p = (float)totalmarks;              
+			float percentage = (float) ((p/500.0)*100.0);
+			
+			System.out.println("Percentage of Student is: " + percentage + "%");
+	        
+			if (percentage >= 90)
+			{
+	            System.out.println(" First class with 'A' Grade");
+	        } 
+			else if (percentage >= 80) 
+			{
+	            System.out.println(" 'B' Grade ");
+	        }
+			else if (percentage >= 65) 
+			{
+	            System.out.println(" 'C' Grade ");
+	        }
+			else if (percentage >= 40) 
+			{
+	            System.out.println(" 'D' Grade ");
+	        }
+			else if (percentage >= 35) 
+			{
+	            System.out.println("Result: Pass");
+	        }
+			else
+			{
+	            System.out.println("Result: Fail");
+	        }
+	}
+
+}

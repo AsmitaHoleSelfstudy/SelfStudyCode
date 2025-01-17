@@ -1,0 +1,52 @@
+Lab 4.
+1. Write a program to demonstrate  use of  type casting in java.
+  print result after type casting.
+
+
+package com.demo;
+
+import java.util.Scanner;
+
+public class Area1 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		// Area of Triangle
+		System.out.print("Enter base: ");
+        int base = sc.nextInt();
+				
+        System.out.print("Enter Height: ");
+        int height = sc.nextInt();
+				
+		float areaoftriangle =  (float) (0.5* base* height);            //Type Casting
+		System.out.println("Area of Triangle : " + areaoftriangle);
+				
+	}
+
+}
+
+
+
+2. Write a program to demonstrate use of local, instance and static variables in java.
+
+
+package com.demo;
+
+public class Circle {
+    static double pi = 3.14;   // Static variable
+    double radius;             // Instance variable
+
+    double calculateArea(double r) {
+        double area = pi * r * r; // Local variable
+        radius = r;
+        return area;
+    }
+
+    public static void main(String[] args) {
+        Circle c1 = new Circle();
+        System.out.println("Area: " + c1.calculateArea(3));
+    }
+}
+

@@ -1,0 +1,50 @@
+LAB 1 :
+
+ 1)WRITE JAVA PROGRAM TO PRINT "HELLO WORLD" MESSAGE?
+
+
+package com.demo;
+
+public class Lab1 {
+
+	public static void main(String[] args) {
+		System.out.println("HELLO WORLD");
+
+	}
+
+}
+
+
+
+2)WRITE AJAVA PROGRAM TO DEMO ABOUT ALL JAVA PRIMITIVE DATATYPES?
+
+
+package com.demo;
+
+public class Datatypes 
+{
+    public static void main(String[] args) 
+	{
+		int a = 10;
+		short s = 2000;
+		byte b = 100;
+		long l = 793932L;
+		float f = 73.8f;
+		char c = 'A';
+		boolean bool = true ;
+		double d = 455.89;
+		
+		System.out.println("Integer is:" + a);
+		System.out.println("byte: " + b);
+		System.out.println("short: " + s);
+		System.out.println("long: " + l);
+		System.out.println("float: " + f);
+		System.out.println("character: " + c);
+		System.out.println("boolean: " + bool);
+		System.out.println("double: " + d);
+		
+		
+
+	}
+
+}

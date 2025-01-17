@@ -1,0 +1,133 @@
+LAB2
+1. WAP for creating a mini calculator for performing a particular operation based on user choice. ex. if the user will select the addition operation then the output should be the addition of the given two nos.
+
+package com.demo;
+
+import java.util.Scanner;
+
+public class Calc 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);               
+		
+		System.out.print("Enter the first number: ");           
+        double num1 = sc.nextDouble();
+
+        System.out.print("Enter the second number: ");
+        double num2 = sc.nextDouble();
+        
+        System.out.print("Enter your choice : ");
+       int ch = sc.nextInt();
+        
+        if (ch == 1) 
+        {
+            System.out.println("addition is: " + (num1 + num2));
+        } 
+        else if (ch == 2) 
+        {
+            System.out.println(" subtraction is: " + (num1 - num2));
+        } 
+        else if (ch == 3)
+        {
+            System.out.println(" multiplication is: " + (num1 * num2));
+        }
+        else if (ch == 4)
+        {
+            System.out.println("division is: " + (num1 / num2));
+            
+        } 
+        else if (ch == 5)
+        {
+            System.out.println("Modulas is: " + (num1 % num2));
+            
+        } 
+        else 
+        {
+            System.out.println("Invalid choice ");
+        }
+	
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2. WAP for creating a banking Application .you have to take input from the user whether the user wants to deposit, withdraw, or find a current balance.
+
+
+package com.demo;
+
+import java.util.Scanner;
+
+public class Banking
+{
+	
+	public static void main(String[] args) 
+	{
+		 Scanner sc = new Scanner(System.in);
+	     double balance = 100000.0;
+	     
+	     System.out.println("Welcome to the Banking Application!");
+	     System.out.println("1 for Deposit");
+	     System.out.println("2 for Withdraw");
+	     System.out.println("3 for Check Balance");
+         
+	     System.out.print("Enter your choice : ");
+        int ch = sc.nextInt();
+		
+		if (ch == 1) {
+            System.out.print("Enter amount to deposit: ");
+            double deposit = sc.nextDouble();
+            
+            balance += deposit;
+            
+            System.out.println("Deposited: " + deposit);
+            System.out.println(" Your Updated balance: " + balance);
+            
+        } 
+		else if (ch == 2)
+		{
+            System.out.print("Enter amount to withdraw: ");
+            double withdraw = sc.nextDouble();
+            
+            if (withdraw <= balance) 
+            {
+                balance -= withdraw;
+                System.out.println("Withdrawn: " + withdraw);
+                System.out.println("Remaining balance: " + balance);
+            } 
+            else
+            {
+                System.out.println(" you doesnt have sufficient balance");
+            }
+        }
+		else if (ch == 3) 
+		{
+            System.out.println(" Check Current balance is: " + balance);
+        }
+		else 
+		{
+            System.out.println("Invalid choice.");
+        }
+	   
+        
+        
+        
+	}
+
+}
